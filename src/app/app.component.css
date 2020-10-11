@@ -1,0 +1,22 @@
+app-ingredients-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+app-ingredients-suggestions {
+  flex: 2;
+}
+
+.search-suggest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding-right: 380px;
+}
+
+.search-suggest > * {
+  margin: 12px 0;
+}

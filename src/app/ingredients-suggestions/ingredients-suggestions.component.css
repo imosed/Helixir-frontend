@@ -1,0 +1,45 @@
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  grid-row-gap: 6px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 1336px;
+}
+
+.ingredients-suggestions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #363636;
+  color: #fff;
+  padding: 12px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.suggestion.alcoholic {
+  background-color: #84A969;
+}
+
+.suggestion-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: auto 0;
+  padding: 2px 0;
+}
+
+.selected-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

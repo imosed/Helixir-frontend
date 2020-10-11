@@ -1,0 +1,24 @@
+<div class="ingredients-selected">
+  <div class="ingredients-selected-group">
+    <label>
+      <input type="text" class="recipe-name" placeholder="Recipe name" [(ngModel)]="drinkName" />
+    </label>
+    <span class="selected-heading">Selected</span>
+    <ul class="ingredients-selected-list">
+      <li *ngFor="let sel of choices.selected">
+        <span class="ing-label">
+          {{sel.name}}
+        </span>
+        <span>
+          <label>
+            <input type="number" min="0" placeholder="0" class="ing-volume" [(ngModel)]="sel" /> ml <!-- somehow get a model for this -->
+          </label>
+        </span>
+      </li>
+    </ul>
+  </div>
+  <div class="button-area">
+    <button class="ingredients-selected-clear" (click)="clearSelections()">Clear</button>
+    <button class="ingredients-selected-submit" (click)="submitDrink()">Submit</button>
+  </div>
+</div>

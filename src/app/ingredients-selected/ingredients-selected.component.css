@@ -1,0 +1,85 @@
+.ingredients-selected {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #363636;
+  height: 100%;
+}
+
+.ingredients-selected-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ingredients-selected-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #4d4d4d;
+  margin: 3px 0;
+  padding: 10px 14px;
+  border: none;
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
+}
+
+.ing-volume {
+  width: 50px;
+  color: #fff;
+  background: none;
+  border: 1px none #333;
+  border-bottom-style: solid;
+  padding: 4px 0 2px 4px;
+  font-size: 1em;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+.selected-heading {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 10px;
+  color: #fff;
+}
+
+.ing-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ingredients-selected-submit {
+  background-color: #A6352E;
+}
+
+.ingredients-selected-clear {
+  background-color: #9f9f9f;
+}
+
+.recipe-name {
+  width: 100%;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #7b7b7b;
+  border: none;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.button-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-area button {
+  height: 42px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  flex: 1;
+}

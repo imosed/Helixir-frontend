@@ -1,0 +1,11 @@
+<div class="ingredients-suggestions">
+  <div class="suggestions">
+    <div class="suggestion"
+         *ngFor="let choice of choices.suggestions"
+         [ngClass]="{'alcoholic': choice.alcoholic}"
+         (click)="selectIngredient(choice)">
+      <div class="suggestion-label">{{choice.name}}</div>
+      <div *ngIf="isSelected(choice)" class="selected-indicator">✔</div>
+    </div>
+  </div>
+</div>
